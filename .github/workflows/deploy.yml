@@ -31,5 +31,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.get_version.outputs.VERSION }}
-          labels: ${{ env.REGISTRY }}/${{ github.repository }}
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.get_version.outputs.VERSION }}
