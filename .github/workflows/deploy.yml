@@ -2,7 +2,7 @@ name: Create and publish a Docker image
 on: [push]
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: kamioda/mjrankitestdb
+  IMAGE_NAME: kamioda/mjrankingtestdb
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
